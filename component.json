@@ -1,0 +1,19 @@
+{
+  "name": "throttled",
+  "repo": "mnmly/throttled",
+  "description": "Throttled scroll and resize event on requestAnimationFrame",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "component/raf": "*",
+    "component/event": "*",
+    "component/emitter": "*",
+    "ianstormtaylor/bind": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Throttled</title>
+    <style type="text/css" media="all">
+      h3{
+        position: absolute;
+        width: 100%;
+        top: 47%;
+        font-weight: normal;
+        font-family: monospace;
+        text-align: center;
+        line-height: 2;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h3>This is purely for personal dumb test.</br>Look at console.</h3>
+    <script type="text/javascript" src='../build/build.js'></script>
+    <script type="text/javascript">
+  
+      var Throttled = require('throttled');
+      var throttled = new Throttled(); // Probably better to be used as singleton.
+
+      throttled.on('scroll', function(){
+        console.log('clean scroll');
+      });
+
+      throttled.on('resize', function(){
+        console.log('clean resize');
+      });
+
+
+      // If you don't want this anymore.
+      throttled.destroy();
+
+    </script>
+  </body>
+</html>
